@@ -77,7 +77,7 @@ To test, we can access [http://localhost:1365](http://localhost:1365) and see ou
 $ curl http://localhost:1365
 {"hello": "world"}
 ```
-If we access [http://localhost:1365/static/hello.txt](http://localhost:1365/static/hello.txt)`, we can see the following output:
+If we access [http://localhost:1365/static/hello.txt](http://localhost:1365/static/hello.txt), we can see the following output:
 ```
 $ curl http://localhost:1365/static/hello.txt
 hi!
