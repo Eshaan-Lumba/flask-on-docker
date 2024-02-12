@@ -16,6 +16,8 @@ $ pip3 install docker-compose
 ```
 will do it for you. 
 
+All the following commands should be run from the root directory.
+
 ### Development
 
 First, we can use `docker-compose` to build the Docker image and run the container.
