@@ -20,11 +20,11 @@ All the following commands should be run from the root directory.
 
 ### Development
 
-First, we can use `docker-compose` to build the Docker image and run the container.
+First, we can use `docker-compose` to build the Docker image and run the container (the `-d` flag allows us to run it in the background):
 ```
 $ docker-compose up -d --build
 ```
-We now need to start and create the databases:
+We now need to start and create the database:
 ```
 $ docker-compose exec web python manage.py create_db
 ```
@@ -64,7 +64,7 @@ $ docker-compose down -v
 
 Note that this repository does not contain the `.env.prod` and `.env.prod.db` environment variable files that are necessary for the services to run from the container for security purposes. 
 
-Again, we need to build the production Docker image and run the container. 
+Again, we need to build the production Docker image and run the container (the `-f` flag specifies the Docker production configuration file over the default `docker-compose.yml` and the `-d` flag allows us to run it in the background):
 ```
 $ docker-compose -f docker-compose.prod.yml up -d --build
 ```
